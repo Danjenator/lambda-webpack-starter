@@ -1,31 +1,34 @@
 # lambda-webpack-starter
+***
 This a starter pack for lambda that uses webpack built with the serverless framework.
 
 ## Setup
+---
 
-You'll need to install serverless.
+* You'll need to install serverless,
+
 `npm install -g serverless`
 
+* and the node dependencies.
 
+`npm install`
 
-MIT License
+* Next create a serverless project with a nodejs template for lambda.
 
-Copyright (c) 2017 Daniel J. Brown
+`serverless create -t aws-nodejs`
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+* A serverless.yml will be created in your directory. The template is pretty straight forward and includes links to serverless's documenation. 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+* You'll also need to set up the [aws cli](https://aws.amazon.com/cli/) tool too, if you haven't already done so.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Development
+
+To run locally use:
+
+`serverless invoke local --function <function-name>`
+
+## Deployment
+
+To deploy to your lambda simply type:
+
+'serverless deploy'
