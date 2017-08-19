@@ -1,9 +1,16 @@
 # lambda-webpack-starter
 This a starter pack for lambda that uses webpack built with the serverless framework.
 
+## Setup
+
+You'll need to install serverless.
+`npm install -g serverless`
+
+
+
 MIT License
 
-Copyright (c) [2017] [Daniel J. Brown]
+Copyright (c) 2017 Daniel J. Brown
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
